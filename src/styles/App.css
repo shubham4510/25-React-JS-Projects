@@ -104,3 +104,35 @@ img{
     flex: 0 0 auto;
     cursor: pointer;
 }
+
+.product-container{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.product{
+    height: 200px;
+    width: 250px;
+    text-align: center;
+}
+
+.product img{
+    object-fit: contain;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.wrap{
+    background: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding: 20px;
+}
