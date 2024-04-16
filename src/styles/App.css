@@ -136,3 +136,14 @@ img{
     border: 2px solid black;
     padding: 20px;
 }
+
+.tree-view-container{
+    height: 90vh;
+    width: 20vw;
+    background: rgb(19, 1, 176);
+    margin-top: 20px;
+    position: relative;
+    left: -40%;
+    color: white;
+}
+

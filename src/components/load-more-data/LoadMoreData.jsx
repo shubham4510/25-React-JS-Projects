@@ -4,10 +4,13 @@ const LoadMoreData = () => {
     const [loading, setLoading] = useState(true)
     const [products, setProducts] = useState([])
     const [count, setCount] = useState(0)
+    const [disableButton, setDisableButton] = useState(false)
 
     useEffect(()=>{
         fetchProducts()
     },[count])
+
+  
 
     const fetchProducts = async () =>{
         try{
@@ -15,9 +18,10 @@ const LoadMoreData = () => {
             const result = await response.json();
             if(result && result.products && result.products.length){
                 setProducts(prevData => [...prevData,...result.products])
+                products.length === 100 && setDisableButton(true)
+
                 setLoading(false)
             }
-            console.log(result.products);
         }catch(e){
             console.log(e);
             setLoading(false)
@@ -32,14 +36,14 @@ const LoadMoreData = () => {
     <div className='wrap'>
      <div className='product-container'>
         {
-            (products && products.length )? products.map(item => <div className='product' key={item.id}>
+            (products && products.length )? products.map((item,index) => <div className='product' key={index}>
                 <img src={item.thumbnail} alt={item.title}/>
                 <p>{item.title}</p>
             </div>):null
         }
         </div>
         <div className="btn-container">
-        <button onClick={() => setCount(count+1)}>Load</button>
+        <button disabled={disableButton} onClick={() => setCount(count+1)}>{disableButton?"Nothing To Load":"Load"}</button>
         </div>
     </div>
        

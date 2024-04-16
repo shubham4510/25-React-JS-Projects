@@ -4,6 +4,8 @@ import RandomColor from '../Random color/RandomColor.jsx'
 import StarRating from '../Star rating/StarRating.jsx'
 import ImageSlider from '../Image slider/ImageSlider.jsx'
 import LoadMoreData from '../load-more-data/LoadMoreData.jsx'
+import TreeView from '../Tree view/TreeView.jsx'
+import menus from '../Tree view/data.jsx'
 
 const Body = () => {
   return (
@@ -23,6 +25,9 @@ const Body = () => {
 
         {/* LOAD MORE PRODUCTS COMPONENT  */}
         <LoadMoreData/>
+
+        {/* TREE VIEW COMPONENT / MENU UI COMPONENT / RECURSIVE NAVIGATION MENU  */}
+        <TreeView menus={menus}/>
     </div>
   )
 }
