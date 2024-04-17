@@ -6,6 +6,7 @@ import ImageSlider from '../Image slider/ImageSlider.jsx'
 import LoadMoreData from '../load-more-data/LoadMoreData.jsx'
 import TreeView from '../Tree view/TreeView.jsx'
 import menus from '../Tree view/data.jsx'
+import QrCodeGenerator from '../Qr-code-generator/QrCodeGenerator.jsx'
 
 const Body = () => {
   return (
@@ -28,6 +29,9 @@ const Body = () => {
 
         {/* TREE VIEW COMPONENT / MENU UI COMPONENT / RECURSIVE NAVIGATION MENU  */}
         <TreeView menus={menus}/>
+
+        {/* QR CODE GENERATOR  */}
+        <QrCodeGenerator/>
     </div>
   )
 }
