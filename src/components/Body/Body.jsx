@@ -7,6 +7,7 @@ import LoadMoreData from '../load-more-data/LoadMoreData.jsx'
 import TreeView from '../Tree view/TreeView.jsx'
 import menus from '../Tree view/data.jsx'
 import QrCodeGenerator from '../Qr-code-generator/QrCodeGenerator.jsx'
+import ScrollIndicator from '../scroll-indicator/ScrollIndicator.jsx'
 
 const Body = () => {
   return (
@@ -32,6 +33,11 @@ const Body = () => {
 
         {/* QR CODE GENERATOR  */}
         <QrCodeGenerator/>
+
+        {/* SCROLL INDICATOR COMPONENT  */}
+        <ScrollIndicator url={`https://dummyjson.com/products`}/>
+
+        
     </div>
   )
 }
