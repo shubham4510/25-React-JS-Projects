@@ -8,6 +8,7 @@ import TreeView from '../Tree view/TreeView.jsx'
 import menus from '../Tree view/data.jsx'
 import QrCodeGenerator from '../Qr-code-generator/QrCodeGenerator.jsx'
 import ScrollIndicator from '../scroll-indicator/ScrollIndicator.jsx'
+import TabTest from '../custom-tabs/TabTest.jsx'
 
 const Body = () => {
   return (
@@ -37,6 +38,8 @@ const Body = () => {
         {/* SCROLL INDICATOR COMPONENT  */}
         <ScrollIndicator url={`https://dummyjson.com/products`}/>
 
+        {/* CUSTOM TABS COMPONENT  */}
+        <TabTest/>
         
     </div>
   )

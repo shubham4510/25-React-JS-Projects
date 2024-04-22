@@ -171,7 +171,7 @@ img{
     transition: all 0.5s;
   }
   
-  .light-dark-mode .container {
+  .light-dark-mode  {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,13 +179,13 @@ img{
     gap: 30px;
   }
   
-  .light-dark-mode .container p {
+  .light-dark-mode p {
     color: var(--text-primary);
     font-size: 40px;
     margin: 0px;
   }
   
-  .light-dark-mode .container button {
+  .light-dark-mode  button {
     background-color: var(--button-bg);
     border: 1px solid var(--button-bg);
     color: var(--button-text);
@@ -219,4 +219,34 @@ img{
 
 .data-container{
     margin-top: 100px;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  
+  .tab-item {
+    display: inline-flex;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    background: #4e016a;
+  }
+  
+  .tab-item.active {
+    border-color: #000;
+    background: #a1d600;
+    color: #fff;
+  }
+
+  .tab-container{
+    width: 100vw;
+    margin-top: 100px;
+    height: 30vh;
 }
