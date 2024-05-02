@@ -9,6 +9,7 @@ import menus from '../Tree view/data.jsx'
 import QrCodeGenerator from '../Qr-code-generator/QrCodeGenerator.jsx'
 import ScrollIndicator from '../scroll-indicator/ScrollIndicator.jsx'
 import TabTest from '../custom-tabs/TabTest.jsx'
+import ModalTest from '../customModalPopup/ModalTest.jsx'
 
 const Body = () => {
   return (
@@ -40,6 +41,9 @@ const Body = () => {
 
         {/* CUSTOM TABS COMPONENT  */}
         <TabTest/>
+
+        {/* CUSTOM MODAL COMPONENT  */}
+        <ModalTest/>
         
     </div>
   )
