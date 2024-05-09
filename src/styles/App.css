@@ -281,3 +281,72 @@ img{
 .header{
     padding: 4px 16px;
 }
+
+.github-profile-container {
+    margin: 0 auto;
+    height: 3500px;
+    max-width: 600px;
+    border-radius: 8px;
+ 
+  } 
+  
+  .input-wrapper {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .input-wrapper input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid black;
+    background: rgb(233, 227, 227);
+    border-radius: 30px;
+  }
+  
+  .input-wrapper button {
+    padding: 5px 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffdd00;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .user{
+      padding: 0 5px;
+      border-radius: 10px;
+      border: 1px solid;
+  }
+  
+  .avatar{
+      height: 250px;
+        display: flex;
+      width: 250px;
+      aspect-ratio: 1/1;
+      border-radius: 50%;
+      transform: translateX(25%);
+      border: 1px solid gray;
+  }
+  
+  
+  .name-container{
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 20px;
+  }
+  
+  .name-container p{
+      margin: 0px;
+      font-size: 20px;
+      font-weight: bold;
+  }
+  
+  .profile-info {
+      text-align: center;
+      font-size: 15px;
+      font-family:   sans-serif;
+      font-weight: bold;
+  }
