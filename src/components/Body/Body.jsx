@@ -11,6 +11,7 @@ import ScrollIndicator from '../scroll-indicator/ScrollIndicator.jsx'
 import TabTest from '../custom-tabs/TabTest.jsx'
 import ModalTest from '../customModalPopup/ModalTest.jsx'
 import GithubProfileFinder from '../../GithubProfileFinder/GithubProfileFinder.jsx'
+import SearchAutocomplete from '../../search-auto-complete-with-api/SearchAutoComplete.jsx'
 
 const Body = () => {
   return (
@@ -48,6 +49,9 @@ const Body = () => {
 
         {/* GITHUB PROFILE FINDER  */}
         <GithubProfileFinder/>
+
+        {/* SEARCH AUTO COMPLETE WITH API  */}
+        <SearchAutocomplete/>
         
     </div>
   )
