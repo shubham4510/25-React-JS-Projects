@@ -12,7 +12,7 @@ import TabTest from '../custom-tabs/TabTest.jsx'
 import ModalTest from '../customModalPopup/ModalTest.jsx'
 import GithubProfileFinder from '../../GithubProfileFinder/GithubProfileFinder.jsx'
 import SearchAutocomplete from '../../search-auto-complete-with-api/SearchAutoComplete.jsx'
-import FeatureFlagGlobalState from '../../Feature-flag/context/FeatureFlagGlobalState.jsx'
+import TicTacToe from '../tic-tac-toe/TicTacToe.jsx'
 
 const Body = () => {
   return (
@@ -54,8 +54,8 @@ const Body = () => {
         {/* SEARCH AUTO COMPLETE WITH API  */}
         <SearchAutocomplete/>
 
-        {/* FEATURE FLAG  */}
-        <FeatureFlagGlobalState/>
+        {/* TIC TAC TOE  */}
+        <TicTacToe/>
         
     </div>
   )
