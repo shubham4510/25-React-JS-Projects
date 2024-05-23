@@ -13,6 +13,7 @@ import ModalTest from '../customModalPopup/ModalTest.jsx'
 import GithubProfileFinder from '../../GithubProfileFinder/GithubProfileFinder.jsx'
 import SearchAutocomplete from '../../search-auto-complete-with-api/SearchAutoComplete.jsx'
 import TicTacToe from '../tic-tac-toe/TicTacToe.jsx'
+import Weather from '../WeatherApp/Weather.jsx'
 
 const Body = () => {
   return (
@@ -56,6 +57,9 @@ const Body = () => {
 
         {/* TIC TAC TOE  */}
         <TicTacToe/>
+
+        {/* WEATHER APP  */}
+        <Weather/>
         
     </div>
   )

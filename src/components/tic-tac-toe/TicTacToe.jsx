@@ -37,6 +37,7 @@ export default function TicTacToe() {
         squares[x] === squares[y] &&
         squares[x] === squares[z]
       ) {
+        console.log(squares[x] && squares[y] && squares[z])
         return squares[x];
       }
     }
